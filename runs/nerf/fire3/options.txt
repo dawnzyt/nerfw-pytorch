@@ -1,0 +1,33 @@
+--------------------Options--------------------
+Description: 训练7 scenes的fire数据集, coarse model均无appearance、transient encoding; fine model有appearance encoding
+N_c: 64
+N_dir_freq: 4
+N_f: 64
+N_xyz_freq: 15
+W: 256
+a_dim: 48
+batch_size: 1024
+beta_min: 0.01
+chunk: 4096
+ckpt: /root/zju/project/runs/nerf/fire2/ckpt_epoch17_iter7500_psnr-23.214c-25.351f.pkl
+data_root_dir: /root/autodl-tmp/dataset/7 scenes
+encode_a: True
+encode_t: True
+epochs: 20
+exp_name: fire3
+img_downscale: 2
+is_train: True
+lambda_u: 0.1
+last_epoch: 0
+layers: 8
+log_freq: 225
+lr: 0.0005
+num_gpus: 4
+perturb: 1.0
+root_dir: ./runs/nerf
+save_latest_freq: 450
+scene: fire
+t_dim: 16
+use_cache: True
+use_disp: False
+--------------------End--------------------

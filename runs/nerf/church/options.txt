@@ -1,0 +1,33 @@
+--------------------Options--------------------
+Description: 第一次简单训练, 4×3080, 纠正c2w、transmittance等error, 注意: 没有进行畸变校正。中途第9个eopch后将N_c和N_f增大为128。
+N_c: 128
+N_dir_freq: 4
+N_f: 128
+N_xyz_freq: 10
+W: 256
+a_dim: 32
+batch_size: 1024
+beta_min: 0.1
+chunk: 4096
+ckpt: /root/zju/project/runs/nerf/fire/ckpt_epoch2_iter16500_psnr-16.081c-16.207f.pkl
+data_root_dir: /root/autodl-tmp/dataset/Cambridge
+encode_a: True
+encode_t: True
+epochs: 20
+exp_name: church
+img_downscale: 3
+is_train: True
+lambda_u: 0.003
+last_epoch: 0
+layers: 8
+log_freq: 225
+lr: 0.0005
+num_gpus: 4
+perturb: 1.0
+root_dir: ./runs/nerf
+save_latest_freq: 6750
+scene: StMarysChurch
+t_dim: 32
+use_cache: True
+use_disp: False
+--------------------End--------------------

@@ -1,0 +1,33 @@
+--------------------Options--------------------
+Description: 训练7 scenes的fire数据集, 默认参数但fine model带transient encoding.
+N_c: 128 
+N_dir_freq: 4
+N_f: 128
+N_xyz_freq: 10
+W: 256
+a_dim: 48
+batch_size: 1024
+beta_min: 0.03
+chunk: 4096
+ckpt: /root/zju/project/runs/nerf/fire/ckpt_epoch6_iter28500_psnr-22.555c-25.118f.pkl
+data_root_dir: /root/autodl-tmp/dataset/7 scenes
+encode_a: True
+encode_t: True
+epochs: 20
+exp_name: fire
+img_downscale: 2
+is_train: True
+lambda_u: 0.01
+last_epoch: 6
+layers: 8
+log_freq: 225
+lr: 0.0005
+num_gpus: 4
+perturb: 1.0
+root_dir: ./runs/nerf
+save_latest_freq: 6750
+scene: fire
+t_dim: 16
+use_cache: True
+use_disp: False
+--------------------End--------------------

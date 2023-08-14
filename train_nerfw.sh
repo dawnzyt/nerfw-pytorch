@@ -1,0 +1,32 @@
+/root/miniconda3/bin/python3 train_nerfw_DDP.py \
+--root_dir /root/zju/project/runs \
+--exp_name train_fire_scene \
+--Description "第二个场景,7 scenes的fire" \
+--is_train True \
+--batch_size 2048 \
+--chunk 4*1024 \
+--epochs 20 \
+--last_epoch 0 \
+--lr 0.0008 \
+--save_latest_freq 6750 \
+--log_freq 225 \
+--num_gpus 4 \
+--ckpt /root/zju/project/runs/nerf/exp2/ckpt_epoch1_iter81000_psnr-16.855c-17.970f.pkl \
+--img_downscale 2 \
+--data_root_dir /root/autodl-tmp/dataset/7 scenes \
+--scene fire \
+--use_cache True \
+--layers 8 \
+--W 256 \
+--N_xyz_freq 15 \
+--N_dir_freq 4 \
+--N_c 64 \
+--N_f 64 \
+--use_disp False \
+--perturb 1.0 \
+--encode_a True \
+--encode_t True \
+--a_dim 32 \
+--t_dim 16 \
+--beta_min 0.1 \
+--lambda_u 0.01
